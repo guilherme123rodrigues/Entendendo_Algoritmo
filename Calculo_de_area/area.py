@@ -1,3 +1,7 @@
+from rich import Console
+
+console = Console()
+
 def area(altura=0, largura=0):
     return altura * largura
     
@@ -6,12 +10,12 @@ def erro(valor):
      try:
          r = float(input(valor))
      except (TypeError, ValueError):
-         print('\033[1;31mValor incorreto\033[m')
+         console.print('[bold red italic]Valor incorreto[/]')
          return False
      else:
          return r
          
-resp = str(input('Menu de opçoes'))
+resp = str(input('[bold blue italic]Menu de opçoes[/]'))
 
 l_n = ['Largura', 'Altura']    
 lista = []
