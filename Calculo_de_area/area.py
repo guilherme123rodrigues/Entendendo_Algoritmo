@@ -59,7 +59,7 @@ def perimetro(base=0, altura=0):
 # ==================================================
 # FUNÇÃO DE TRATAMENTO DE ERROS
 # ==================================================
-def erro(valor, ty):
+def validar_entrada(valor, ty):
 
     '''
     Objetivo:
@@ -102,7 +102,7 @@ def erro(valor, ty):
 # ==================================================
 while True:
 
-    resp = erro('''MENU DE OPÇÕES
+    resp = validar_entrada('''MENU DE OPÇÕES
 [1] Calcular área
 [2] Calcular perímetro
 [3] Sair
@@ -138,7 +138,7 @@ if not resp == 3:
 
         while True:
 
-            r = erro(f'Digite a {c}: ', float)
+            r = validar_entrada(f'Digite a {c}: ', float)
 
             if r != False:
                 lista.append(r)
