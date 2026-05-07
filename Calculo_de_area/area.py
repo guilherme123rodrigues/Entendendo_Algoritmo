@@ -172,5 +172,3 @@ match resp:
 
     case _:
         print('\033[1;33mEncerrando sistema...\033[m')
-        
-help(perimetro)
