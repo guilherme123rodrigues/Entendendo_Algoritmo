@@ -59,7 +59,11 @@ def perimetro(base=0, altura=0):
 # ==================================================
 # FUNÇÃO DE TRATAMENTO DE ERROS
 # ==================================================
+<<<<<<< HEAD
 def erro(valor, ty):
+=======
+def validar_entrada(valor, ty):
+>>>>>>> da9070405aa475b69886d0579ecc28f18ac65297
 
     '''
     Objetivo:
@@ -102,7 +106,11 @@ def erro(valor, ty):
 # ==================================================
 while True:
 
+<<<<<<< HEAD
     resp = erro('''MENU DE OPÇÕES
+=======
+    resp = validar_entrada('''MENU DE OPÇÕES
+>>>>>>> da9070405aa475b69886d0579ecc28f18ac65297
 [1] Calcular área
 [2] Calcular perímetro
 [3] Sair
@@ -138,7 +146,11 @@ if not resp == 3:
 
         while True:
 
+<<<<<<< HEAD
             r = erro(f'Digite a {c}: ', float)
+=======
+            r = validar_entrada(f'Digite a {c}: ', float)
+>>>>>>> da9070405aa475b69886d0579ecc28f18ac65297
 
             if r != False:
                 lista.append(r)
@@ -172,4 +184,7 @@ match resp:
 
     case _:
         print('\033[1;33mEncerrando sistema...\033[m')
+<<<<<<< HEAD
         
+=======
+>>>>>>> da9070405aa475b69886d0579ecc28f18ac65297
